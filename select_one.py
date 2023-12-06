@@ -1,0 +1,9 @@
+from main import session
+from models import User
+
+jona = session.query(User).filter_by(
+    User.username =='jona'
+)
+
+jesse= session.query(User).filter_by(username='paul').first
+print(jesse)
